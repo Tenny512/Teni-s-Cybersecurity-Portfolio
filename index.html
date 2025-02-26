@@ -5,15 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #0a0a0a; color: #00ffcc; }
-        header { background: linear-gradient(90deg, #002244, #004466); padding: 20px; text-align: center; font-size: 28px; font-weight: bold; letter-spacing: 2px; }
-        .container { width: 80%; margin: auto; padding: 20px; }
-        .section { margin-bottom: 40px; }
-        h2 { border-bottom: 2px solid #00ffcc; padding-bottom: 10px; }
-        .project { background: rgba(0, 68, 102, 0.2); padding: 15px; margin: 10px 0; border-radius: 8px; }
-        footer { text-align: center; padding: 20px; background: linear-gradient(90deg, #002244, #004466); font-size: 14px; }
-        a { color: #00ffcc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #0b0c10; 
+            color: #c5c6c7; 
+        }
+        header { 
+            background: #1f2833; 
+            padding: 30px; 
+            text-align: center; 
+            font-size: 32px; 
+            font-weight: bold; 
+            color: #66fcf1; 
+            text-transform: uppercase;
+        }
+        .container { 
+            width: 85%; 
+            margin: auto; 
+            padding: 40px; 
+        }
+        .section { 
+            margin-bottom: 50px; 
+            padding: 30px; 
+            background: #1f2833; 
+            border-radius: 8px; 
+            box-shadow: 0px 0px 10px rgba(102, 252, 241, 0.5);
+        }
+        h2 { 
+            border-bottom: 3px solid #66fcf1; 
+            padding-bottom: 10px; 
+            color: #45a29e;
+        }
+        .project { 
+            background: #0b0c10; 
+            padding: 20px; 
+            margin: 15px 0; 
+            border-radius: 8px; 
+            border-left: 5px solid #66fcf1;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.02);
+            background: #121417;
+        }
+        footer { 
+            text-align: center; 
+            padding: 25px; 
+            background: #1f2833; 
+            font-size: 14px; 
+            color: #66fcf1;
+        }
+        a { 
+            color: #66fcf1; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
     </style>
 </head>
 <body>
@@ -23,29 +74,34 @@
     <div class="container">
         <section class="section" id="about">
             <h2>About Me</h2>
-            <p>Aspiring cybersecurity professional with a strong interest in risk assessment, compliance, and network security. Proficient in security analysis, threat mitigation, and incident response, with hands-on experience in cybersecurity audits and assessments.</p>
+            <p>Aspiring cybersecurity professional with a strong interest in risk assessment, compliance, and network security. Skilled in security analysis, threat mitigation, and incident response, with hands-on experience in cybersecurity audits and assessments.</p>
         </section>
         <section class="section" id="projects">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Botium Toys: Risk Assessment & Compliance Audit</h3>
-                <p>Conducted a comprehensive cybersecurity risk assessment for Botium Toys, evaluating their security posture using the NIST Cybersecurity Framework. Identified key vulnerabilities in asset management, encryption, and access control. Recommended security enhancements, including the enforcement of least privilege, encryption of sensitive data, and the deployment of an Intrusion Detection System (IDS). Assessed compliance with PCI DSS and GDPR, providing a roadmap for aligning security practices with industry standards. Developed a risk mitigation strategy to reduce the organization’s exposure to cyber threats and improve overall resilience.</p>
+                <p>Conducted a cybersecurity risk assessment using the NIST Cybersecurity Framework to evaluate Botium Toys' security posture. Identified weaknesses in asset management, encryption, and access control, and provided a remediation strategy. Recommended least privilege enforcement, AES-256 encryption, and an Intrusion Detection System (IDS) to mitigate risks. Assessed compliance with PCI DSS and GDPR and provided a roadmap for security enhancements.</p>
+                <a href="Botium_Toys_Scope_goals_and_risk_assessment_report.docx" download>Download Report</a>
             </div>
             <div class="project">
                 <h3>Mock Security Audit</h3>
-                <p>Performed a detailed internal security audit for Botium Toys, focusing on compliance with PCI DSS and GDPR. Evaluated security policies, access controls, and encryption measures to determine gaps in compliance. Recommended the implementation of AES-256 encryption for data security, SIEM solutions for real-time threat detection, and robust password management policies. Developed an audit framework for continuous monitoring of security controls, ensuring long-term regulatory compliance and improved data protection.</p>
+                <p>Performed an internal security audit for a corporate environment to assess compliance with PCI DSS and GDPR. Evaluated password policies, encryption methods, and network security measures. Recommended implementing multi-factor authentication (MFA), centralized identity management, and SIEM solutions for real-time threat detection. Provided an audit framework to maintain ongoing compliance and mitigate security gaps.</p>
+                <a href="Mock_Security_Audit.docx" download>Download Report</a>
             </div>
             <div class="project">
                 <h3>DDoS Attack Analysis</h3>
-                <p>Investigated a Distributed Denial-of-Service (DDoS) attack exploiting an ICMP flood vulnerability. Used network forensics to analyze traffic patterns and identify anomalous spikes in inbound packets. Implemented rate-limiting rules, source IP filtering, and an IDS/IPS system to mitigate future attacks. Provided strategic recommendations to enhance the organization’s defensive capabilities, including improved firewall configurations and real-time traffic monitoring using a SIEM solution.</p>
+                <p>Investigated a Distributed Denial-of-Service (DDoS) attack on a corporate network. Used network forensics to analyze traffic patterns, detect an ICMP flood vulnerability, and assess the impact. Implemented firewall rules, rate-limiting, and an Intrusion Prevention System (IPS) to mitigate future threats. Provided a detailed incident report outlining defensive measures and proactive security strategies.</p>
+                <a href="NIST_CSF_INCIDENT_REPORT_ANALYSIS.docx" download>Download Report</a>
             </div>
             <div class="project">
                 <h3>Security Risk Assessment</h3>
-                <p>Conducted a security risk assessment to identify critical vulnerabilities in a social media organization’s network infrastructure. Key findings included weak authentication mechanisms, default admin credentials, and a lack of firewall traffic filtering. Recommended a multi-layered security approach, incorporating multi-factor authentication (MFA), role-based access control (RBAC), and routine firewall rule maintenance. Strengthened security posture by proposing the implementation of an Intrusion Prevention System (IPS) and advanced endpoint protection measures.</p>
+                <p>Conducted a detailed security risk assessment for a social media organization. Identified key vulnerabilities, including weak authentication mechanisms, default credentials, and lack of firewall filtering. Recommended implementing multi-factor authentication (MFA), role-based access control (RBAC), and endpoint detection & response (EDR) solutions to strengthen security posture.</p>
+                <a href="Security_risk_assessment_report.docx" download>Download Report</a>
             </div>
             <div class="project">
                 <h3>SYN Flood Attack Analysis</h3>
-                <p>Analyzed a SYN flood attack using Wireshark to capture and interpret packet logs. Identified malicious traffic overwhelming the web server’s resources, leading to a denial-of-service condition. Implemented SYN cookies, rate-limiting mechanisms, and enhanced firewall filtering to mitigate attack vectors. Proposed long-term countermeasures, including deep packet inspection (DPI) and behavioral anomaly detection, to prevent future exploitation of TCP handshake vulnerabilities.</p>
+                <p>Analyzed a SYN flood attack using Wireshark and packet capture analysis. Identified malicious traffic overwhelming the web server with half-open TCP connections, leading to a denial-of-service condition. Recommended SYN cookies, rate-limiting mechanisms, and deep packet inspection (DPI) to prevent similar attacks. Provided strategic recommendations for network hardening and intrusion detection.</p>
+                <a href="SYN_FLOOD_ATTACK_READING_WIRESHARK_LOG.docx" download>Download Report</a>
             </div>
         </section>
         <section class="section" id="certifications">
